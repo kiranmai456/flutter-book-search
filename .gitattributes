@@ -1,0 +1,19 @@
+# Force GitHub to focus on Dart code
+android/** linguist-vendored
+ios/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+
+# Ignore generated/build files
+build/** linguist-generated=true
+**/*.g.dart linguist-generated=true
+**/*.freezed.dart linguist-generated=true
+**/*.mocks.dart linguist-generated=true
+
+# Treat assets as non-code
+assets/** linguist-vendored
+fonts/** linguist-vendored
+
+# Normalize line endings
+* text=auto
